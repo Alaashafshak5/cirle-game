@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.circledraw.MainActivity">
+
+    <Button
+        android:id="@+id/button_change"
+        android:text="changeHere"
+        android:onClick="ChangeHere"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+
+    </Button>
+
+    <com.example.circledraw.CircleView
+        android:layout_width="200px"
+        android:layout_height="200px"
+        custom:circle_color="#FF0000"
+        />
+    <Button
+        android:id="@+id/in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Zoom in"
+        android:onClick="zoomIn"/>
+
+    <Button
+        android:id="@+id/out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Zoom out"
+        android:onClick="zoomOut"/>
+
+
+</LinearLayout>
